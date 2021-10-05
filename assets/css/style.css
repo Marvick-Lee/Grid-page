@@ -1,24 +1,95 @@
 *{
-    /* margin-left: 120px; */
-    /* margin-right: 120px; */
     list-style-type: none;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 32px;
 }
 
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 
-1. Từ ngoài vào trong
-2. Từ trên xuống dưới
-3. Từ tổng quan dến chi tiết    
-*/
-
-/* 
-1. Vị trí
-2. Kích thước (width, height,...)
-3. Màu sắc
-4. Kiểu dáng (kiểu chữ, hình tròn, vuông...)
-*/
-
 /* setup */
+body{
+    display: block;
+    margin: 0;
+}
+
+.container{
+    background: rgba(255,255,255,0);
+}
+
+.header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    height: 96px;
+    box-shadow: 0px 4px 8px 0px #26323814;
+    box-shadow: 0px 2px 4px 0px #26323829;
+
+}
+
+.header .page-logo{
+    display: flex;
+    align-items: center;
+}
+.header .name{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.nav-bar #nav {
+    position: relative;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+}
+
+#nav li {
+    margin: 0 1vw;
+    line-height: 32px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #6C5CE7;
+}
+
+.header #sign-in-but{
+    /* margin-left: 8vw; */
+    background: #A29BFE;
+    padding: 16px 48px;
+    font-size: 24px;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 16px;
+}
+
+.content{
+    margin-top: 96px;
+}
+
+.content .content-intro{
+    height: 0;
+    overflow: hidden;
+}
+
+.content .content-info{
+    
+}
+
+.content-info .info-item-list{
+    padding: 40px 135px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.info-item-list p{
+    padding: 0px -2px;
+}

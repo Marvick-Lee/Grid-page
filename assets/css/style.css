@@ -1,14 +1,11 @@
 *{
-    margin-left: 135px;
-    margin-right: 135px;
+    /* margin-left: 120px; */
+    /* margin-right: 120px; */
+    list-style-type: none;
 }
 
 html{
-    /* font-family: Arial, Helvetica, sans-serif; */
-    scroll-behavior: smooth;
-    @import url ('https://rsms.me/inter/inter.css')
-    font-family: 'Inter', sans-serif;
-    @supports (font-variation-settings: normal) {font-family: 'Inter var', sans-serif;}
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* 

@@ -7,6 +7,8 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    transition: 0.4s ease-in-out;
 }
 
 /* setup */
@@ -38,6 +40,7 @@ body{
     display: flex;
     align-items: center;
 }
+
 .header .name{
     font-size: 48px;
     font-weight: 700;
@@ -60,6 +63,15 @@ body{
     color: #6C5CE7;
 }
 
+#nav a:hover{
+    color: #333;
+    font-weight: 600;
+}
+
+#nav .nav-dot{
+    color: #FDCB6E;
+}
+
 .header #sign-in-but{
     /* margin-left: 8vw; */
     background: #A29BFE;
@@ -68,6 +80,11 @@ body{
     font-weight: 700;
     border: 0px;
     border-radius: 16px;
+}
+
+.header #sign-in-but:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .content{
@@ -90,4 +107,29 @@ body{
     justify-content: space-evenly;
 }
 
-.content-info .info-item
+.content-info .info-item{
+    padding: 0px 15px;
+}
+
+.info-item .lm-but{
+    background-color: white;
+    color: #6C5CE7;
+    border: 1px solid #ADADAD;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.info-item .lm-but:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.content-pricing{
+    height: 0;
+    overflow: hidden;
+}
+
+.footer{
+    height: 0;
+    overflow: hidden;
+}

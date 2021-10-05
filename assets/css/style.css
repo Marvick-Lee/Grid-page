@@ -97,11 +97,13 @@ body{
 }
 
 .content .content-info{
-    
+    margin: 0 120px;
 }
+.content .content-info > h3{font-size: 32px;}
+.content .content-info > p{font-size: 24px;}
 
 .content-info .info-item-list{
-    padding: 40px 135px;
+    padding: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;

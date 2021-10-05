@@ -90,6 +90,4 @@ body{
     justify-content: space-evenly;
 }
 
-.info-item-list p{
-    padding: 0px -2px;
-}
+.content-info .info-item

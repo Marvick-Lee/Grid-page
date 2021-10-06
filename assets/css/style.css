@@ -220,7 +220,7 @@ body{
 
 /* content pricing */
 .content-pricing{
-    padding: 80px 120px 80px 120px; 
+    padding: 80px 120px 0px 120px; 
     border-bottom: 1px solid lightgray;
 }
 
@@ -314,8 +314,8 @@ body{
 }
 
 .footer{
-    margin-top: 80px;
-    padding: 0 0 80px 135px;
+    margin-top: 64px;
+    padding: 0 0 120px 135px;
 }
 
 .footer .footer-grid{

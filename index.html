@@ -7,7 +7,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Grid</title>
     <link rel="icon" href="assets/icon/icon-layout.svg" type="image/x-icon" />
-        
+    <style>
+        .content-intro #fine{background: url("assets/img/fine-background.png") bottom center / contain no-repeat;}
+        .content-intro{background: url("assets/img/content-intro-bg.png") top right / contain no-repeat;}
+        .content-pricing #monthly{background: url("assets/img/monthly-background.png") bottom center / contain no-repeat;}
+        .footer{background: url("assets/img/footer-wave.png") bottom / contain no-repeat;}
+    </style>
 </head>
 
 <body>
@@ -28,7 +33,7 @@
                     <li class="nav-dot">•</li>
                     <li><a href="#">What we do</a></li>
                     <li class="nav-dot">•</li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#contact">Contact us</a></li>
                 </ul>
             </div>
             
@@ -107,7 +112,8 @@
 
                 <div class="pricing-tit">
                     <h2>Affordable pricing</h2>
-                    <h4 id=""> Bill me <span id="monthly"> <span id="monthly-bg"></span> monthly</span> • yearly</h4>
+                    <h4 id=""> Bill me <span id="monthly"> monthly</span> • yearly</h4>
+                    <div id="monthly-bg"></div>
                 </div>
 
                 <div class="pricing-list"> 
@@ -151,40 +157,50 @@
         </div>
         
         <div class="footer">
-                <div class="footer-box" id="follow">
-                    <p class="">FOLLOW US<br></p>
-                    <img src="assets/icon/icon-facebook.svg" alt="facebook">
-                    <img src="assets/icon/icon-linkedin.svg" alt="facebook">
-                    <img src="assets/icon/icon-slack.svg" alt="facebook">
-                    <img src="assets/icon/icon-twitter.svg" alt="facebook">
+                <div class="footer-grid">
+                    <div>
+                        <p class="heading">FOLLOW US<br></p>
+                        <div id="follow-i">
+                            <img src="assets/icon/icon-facebook.svg" alt="facebook">
+                            <img src="assets/icon/icon-linkedin.svg" alt="facebook">
+                            <img src="assets/icon/icon-slack.svg" alt="facebook">
+                            <img src="assets/icon/icon-twitter.svg" alt="facebook">
+                        </div>
+                    </div>
+
+                    <div id="follow-l">
+                        <p class="heading">FOLLOW US</p>
+                        <a class="email" href="mailto:hello@fapsterapp.com">hello@fapsterapp.com</a>
+                    </div>
+
+                    <div class="" id="in4">
+                        <p class="heading">INFORMATION</p>
+                        <div class="in4-list">
+                            <p class="">About Fapster app</p>
+                            <p class="">Onhover/Active</p>
+                            <p class="">We are hiring!</p>
+                            <p class="">Get In Touch</p>
+                            <p class="">Privacy Policy</p>
+                            <p class="">Resources</p>
+                            <p class="">Things We Like</p>
+                            <p class="">Terms of Service</p>
+                        </div>
+                    </div>
+                    
+                    <div class="" id="contact">
+                        <p class="heading">KEEP IN TOUCH</p>
+                        <form action="">
+                            <input class="form-control" type="text" name="Your name" required id="" placeholder="Your name">
+                            <input class="form-control" type="text" name="Your email" required id="" placeholder="E-mail                             ✉"> 
+                            <input class="form-mess" type="text" name="message" placeholder="Leave your message">
+                            <input class="form-submit" type="submit" value="Send">
+                        </form>
+                    </div>  
                 </div>
+                    
                 
-                <div class="footer-box" id="">
-                    <p class="">FOLLOW US</p>
-                    <p id=""> hello@fapsterapp.com</p>
-                </div>
 
-                <div class="footer-box" id="">
-                    <p class="">INFORMATION</p>
-                    <div class="">About Fapster app</div>
-                    <div class="">Onhover/Active</div>
-                    <div class="">We are hiring!</div>
-                    <div class="">Get In Touch</div>
-                    <div class="">Privacy Policy</div>
-                    <div class="">Resources</div>
-                    <div class="">Things We Like</div>
-                    <div class="">Terms of Service</div>
-                </div>
-
-                <div class="footer-box" id="">
-                    <p class="">KEEP IN TOUCH</p>
-                    <form action="">
-                        <input class="form-control" type="text" name="Your name" required id="" placeholder="Your name">
-                        <input class="form-control" type="text" name="Your email" required id="" placeholder="E-mail">
-                        <input class="form-mess" type="text" name="message" placeholder="Leave your message">
-                        <input class="form-submit" type="submit" value="Send">
-                    </form>
-                </div>  
+                
         </div>
 
     </div>

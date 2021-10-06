@@ -150,11 +150,15 @@ body{
 
 .intro-left{
     position: absolute;
-    margin: 15px;
-    margin-right: 100px;
+    padding: 15px;
     width: 100%;
     display: flex;
     flex-direction: column; 
+}
+
+.content-intro .content-intro-text{
+    padding: 0 30px 0 0;
+    text-align: justify;
 }
 
 .intro-top-right{

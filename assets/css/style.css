@@ -184,13 +184,13 @@ body{
     gap: 30px;
 }
 
-.content-intro .img-tr-1{grid-area: itr1; align-self: end; width: 100%; height: auto;}
+.content-intro .img-tr-1{grid-area: itr1; align-self: end; width: 100%; height: auto; max-height: 364px;}
 .content-intro .txt-1{grid-area: trt1; width: 100%;  text-align:justify; vertical-align: text-bottom;}
-.content-intro .img-tr-2{grid-area: itr2; width: 100%; height: auto; transform: translateY(10%);}
-.content-intro .img-tr-3{grid-area: itr3; width: 100%; height: auto; transform: translateY(10%);}
-.content-intro .img-br-1{width: 100%;}
-.content-intro .img-br-2{width: 100%;}
-.content-intro .img-br-3{width: 100%;}
+.content-intro .img-tr-2{grid-area: itr2; width: 100%; height: auto; transform: translateY(10%); max-height: 224px;}
+.content-intro .img-tr-3{grid-area: itr3; width: 100%; height: auto; transform: translateY(10%); max-height: 224px;}
+.content-intro .img-br-1{width: 100%;max-height: 300px;}
+.content-intro .img-br-2{width: 100%;max-height: 344px;}
+.content-intro .img-br-3{width: 100%;max-height: 224px;}
 
 .content-intro-but{border: none; padding:16px; color: #FFFFFF; background-color: #6C5CE7; font-size: 28px; border-radius: 36px;}
 .content-intro-but:hover{opacity: 0.9; cursor: pointer;}

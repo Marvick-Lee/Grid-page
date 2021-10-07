@@ -12,6 +12,8 @@
         .content-intro{background: url("assets/img/content-intro-bg.png") top right / contain no-repeat;}
         .content-pricing #monthly{background: url("assets/img/monthly-background.png") bottom center / contain no-repeat;}
         .footer{background: url("assets/img/footer-wave.png") bottom / contain no-repeat;}
+        @media (max-width: 361px){.content .content-intro {background: url("assets/img/content-intro-bg-mobile.png") top center / contain no-repeat;}
+                                  .container .footer{background: url("assets/img/mobile-footer-background.png") bottom left / contain no-repeat;}}
     </style>
 </head>
 
@@ -21,7 +23,8 @@
         <div class="header">
             
             <div class="page-logo">
-                <img class="logo" src="assets/icon/icon-layout.svg">
+                <img class="logo lap" src="assets/icon/icon-layout.svg">
+                <img class="logo mobile" src="assets/icon/icon-menu.svg" alt="menu">
                 <h3 class="name">Grid</h3>
             </div>
 
@@ -43,67 +46,73 @@
         <div class="content">
             <div class="content-intro">
                 <div class="intro-bg"></div>
-                <h1>Combine <span id="fine">fine</span> images</h1>
+                <h1> <span class="mobile"> Combine </span> <span class="lap" id="fine">fine</span> <span class="mobile" id="fine">cool</span>  images</h1>
                 <h2>To represent a product</h2>
                 <br>
 
                 <div class="intro-grid-layout">
-                    <div id="intro-left"> 
+                    <div class="intro-left"> 
                         <p class="content-intro-text">
                             Use mixed grid with imagery, replace with your own photos and descriptions
                         </p>
-                        <img src="assets/img/content-img-1.png" alt="img">
+                        <img src="/assets/img/content-img-1.png" alt="img">
                         <button class = "content-intro-but"> Learn more </button>
                     </div>
-                    <div id="intro-top-right">
-                        <img class="img-tr-1" src="assets/img/content-img-2.png" alt="img">
-                        <p class="content-intro-text">
-                            This is multipurpose grid, it fits for portfolio, services or agency web sites
-                        </p>
-                        <img class="img-tr-2" src="assets/img/content-img-3.png" alt="img">
-                        <img class="img-tr-3" src="assets/img/content-img-4.png" alt="img">
+
+                    <div class="intro-top-right">
+
+                            <img class="img-tr-1" src="/assets/img/content-img-2.png" alt="img">
+
+                        <div class="tp-rt-grid">
+                            <p class="txt-1 content-intro-text ">
+                                This is multipurpose grid, it fits for portfolio, services or agency web sites
+                            </p>
+                            <img class="img-tr-2" src="/assets/img/content-img-3.png" alt="img">
+                            <img class="img-tr-3" src="/assets/img/content-img-4.png" alt="img">
+                        </div>
                     </div>
-                    <div id="intro-bot-right">
-                        <img class="img-br-1" src="assets/img/content-img-5.png" alt="img">
-                        <img class="img-br-2" src="assets/img/content-img-6.png" alt="img">
-                        <img class="img-br-3" src="assets/img/content-img-7.png" alt="img">                
+
+                    <div class="intro-bot-right">
+                        <img class="img-br-1" src="/assets/img/content-img-5.png" alt="img">
+                        <img class="img-br-2" src="/assets/img/content-img-6.png" alt="img">
+                        <img class="img-br-3" src="/assets/img/content-img-7.png" alt="img">                
                     </div>
                 </div>
             </div>
             
             <div class="content-info">
-                <h3>Delivering good designs since 1954 🚚💨</h3>
-                <p>We're the first multi-purpose design kit solutions for businesses. We help you bridge <br>
+                <h3>Delivering good designs since 1954 </h3> <h3 class="lap">🚚💨</h3>
+                <p>We're the first multi-purpose design kit solutions for businesses. We help you bridge
                     gaps between your layouts, templates and developers to empower all involved.
                 </p>
                 
                 <div class="info-item-list">
-                    <div class="info-item">
+                    <div class="info-item mobile-item-1">
                         <img class="info-icon" src="assets/img/icon-phone-call.png" alt="icon">
                         <br><strong>Support</strong><br>
                         <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma </p>
                         <button type="button" class="lm-but">Learn more</button>
                     </div>
                     
-                    <div class="info-item">
+                    <div class="info-item mobile-item-2">
                         <img class="info-icon" src="assets/img/icon-pie-chart.png" alt="icon">
                         <br><strong>Sales growth</strong><br>
                         <p>Identify qualified customers with easy-to use live chat messaging and AI-based Sales Bot</p>
-                        <br><button type="button" class="lm-but">Learn more</button>
+                        <br class="lap"><button type="button" class="lm-but">Learn more</button>
                     </div>
                     
-                    <div class="info-item">
+                    <div class="info-item mobile-item-3">
                         <img  src="assets/img/icon-zap.png" alt="icon">
                         <br><strong>Component-driven</strong><br>
                         <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma</p>
                         <button type="button" class="lm-but">Learn more</button>
                     </div>
                     
-                    <div class="info-item">
+                    <div class="info-item mobile-item-4">
                         <img src="assets/img/icon-thumbs-up.png" alt="icon">
                         <br><strong>Swap the icon</strong><br>
                         <p> You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter</p>
-                        <br><button type="button" class="lm-but">Learn more</button>
+                        <br class="lap"><button type="button" class="lm-but">Learn more</button>
                     </div>
                 </div>
             </div>
@@ -111,44 +120,44 @@
             <div class="content-pricing">
 
                 <div class="pricing-tit">
-                    <h2>Affordable pricing</h2>
+                    <h2 class="lap">Affordable pricing</h2> <h2 class="mobile">Pricing</h2>
                     <h4 id=""> Bill me <span id="monthly"> monthly</span> • yearly</h4>
                     <div id="monthly-bg"></div>
                 </div>
 
                 <div class="pricing-list"> 
-                    <div class="pricing-item">
+                    <div class="pricing-item mobile-item-1">
                         <div class="pricing-item-cate"> Like a pussy </div>
                         <div class="ppc"><span id="price">Free</span>/ FOREVER</div>
                         <ul>
-                            <li><img src="assets/icon/icon-check-background-white.svg" alt="check">   Components-driven system</li>
-                            <li><img src="assets/icon/icon-check-background-white.svg" alt="check">   Sales-boosting landing pages</li>
-                            <li><img src="assets/icon/icon-check-background-white.svg" alt="check">   Awesome Feather icons pack</li>
+                            <li><img src="/assets/icon/icon-check-background-white.svg" alt="check">   Components-driven system</li>
+                            <li><img src="/assets/icon/icon-check-background-white.svg" alt="check">   Sales-boosting landing pages</li>
+                            <li><img src="/assets/icon/icon-check-background-white.svg" alt="check">   Awesome Feather icons pack</li>
                         </ul><br>
                         <br><br><button class="pricing-item-but">Try for free</button>
                     </div>
                     
-                    <div class="pricing-item middle">
+                    <div class="pricing-item middle mobile-item-2">
                         <div class="pricing-item-cate">👤 Individual</div> <span id="best">Best</span>
                         <div class="ppc"><span id="price">$24 </span>/ MONTH</div>
                         <ul>
-                            <li><img src="assets/icon/icon-check-background-yellow.svg" alt="check">   Components-driven system</li>
-                            <li><img src="assets/icon/icon-check-background-yellow.svg" alt="check">   Sales-boosting landing pages</li>
-                            <li><img src="assets/icon/icon-check-background-yellow.svg" alt="check">   Awesome Feather icon pack</li>
-                            <li><img src="assets/icon/icon-check-background-yellow.svg" alt="check">   Themed into 3 different styles</li>
-                            <li><img src="assets/icon/icon-check-background-yellow.svg" alt="check">   Will help to learn Figma</li>
+                            <li><img src="/assets/icon/icon-check-background-yellow.svg" alt="check">   Components-driven system</li>
+                            <li><img src="/assets/icon/icon-check-background-yellow.svg" alt="check">   Sales-boosting landing pages</li>
+                            <li><img src="/assets/icon/icon-check-background-yellow.svg" alt="check">   Awesome Feather icon pack</li>
+                            <li><img src="/assets/icon/icon-check-background-yellow.svg" alt="check">   Themed into 3 different styles</li>
+                            <li><img src="/assets/icon/icon-check-background-yellow.svg" alt="check">   Will help to learn Figma</li>
                         </ul><br>
                         <button class="pricing-item-but mid">Regular license</button>
                     </div>
                     
-                    <div class="pricing-item">
+                    <div class="pricing-item mobile-item-3">
                         <div class="pricing-item-cate">👥 Corporate</div>
                         <div class="ppc"><span id="price">$12 </span>/ EDITOR</div>
                         <ul>
-                            <li><img src="assets/icon/icon-check-background-cyan.svg" alt="check">   Components-driven system</li>
-                            <li><img src="assets/icon/icon-check-background-cyan.svg" alt="check">   Sales-boosting landing pages</li>
-                            <li><img src="assets/icon/icon-check-background-cyan.svg" alt="check">   Awesome Feather icon pack</li>
-                            <li><img src="assets/icon/icon-check-background-cyan.svg" alt="check">   Themed into 3 different styles</li>
+                            <li><img src="/assets/icon/icon-check-background-cyan.svg" alt="check">   Components-driven system</li>
+                            <li><img src="/assets/icon/icon-check-background-cyan.svg" alt="check">   Sales-boosting landing pages</li>
+                            <li><img src="/assets/icon/icon-check-background-cyan.svg" alt="check">   Awesome Feather icon pack</li>
+                            <li><img src="/assets/icon/icon-check-background-cyan.svg" alt="check">   Themed into 3 different styles</li>
                         </ul> <br>
                         <br><button class="pricing-item-but">Extended license</button>
                     </div>
@@ -157,8 +166,17 @@
         </div>
         
         <div class="footer">
+                <div class="mobile-credits">
+                    <h4>Copyright © 2018 • Your Company <br>
+                        All rights reserved
+                    </h4>
+                    <p>
+                        Made in Setproduct.com <br>
+                        One man digital agency
+                    </p>
+                </div>
                 <div class="footer-grid">
-                    <div>
+                    <div class="mobile-grid">
                         <p class="heading">FOLLOW US<br></p>
                         <div id="follow-i">
                             <img src="assets/icon/icon-facebook.svg" alt="facebook">
@@ -196,12 +214,7 @@
                             <input class="form-submit" type="submit" value="Send">
                         </form>
                     </div>  
-                </div>
-                    
-                
-
-                
-        </div>
+                </div>               
 
     </div>
 </body>

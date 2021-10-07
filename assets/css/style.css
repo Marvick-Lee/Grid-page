@@ -147,7 +147,7 @@ body{
     grid-template-areas:
     "lt tp-rt"
     "lt bt-rt";
-    grid-gap: 40px;
+    grid-gap: 30px;
 }
 
 .intro-grid-layout .intro-left{
@@ -178,6 +178,7 @@ body{
 }
 
 .intro-grid-layout .intro-bot-right{
+    padding-top: -40px;
     grid-area: bt-rt;
     display: grid;
     grid-template-columns: 20vw 25vw 12vw;
